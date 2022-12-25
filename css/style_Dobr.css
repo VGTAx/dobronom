@@ -1,0 +1,259 @@
+html {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: white;
+}
+
+header {
+  text-align: center;
+  border: 1px solid black;
+  height: 6vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-bottom-left-radius:  25px;
+  border-bottom-right-radius:  25px;
+  background-color: darkslategrey;
+  color: white;
+}
+
+.menu {
+  position: absolute;
+  padding-top: 400px;
+  padding-left: 50%;
+  margin-top: 10px;  
+  z-index: 900;
+  left: 0;
+}
+
+.menu label {  
+  display: inline-block;
+  width: 8px;
+  height: 8px;  
+  background: gray;
+  border-radius: 50px;  
+}
+.menu label:hover,.menu label:focus {
+  background: #dd1203;  
+  
+}
+.Slider {
+  width: 885px;
+  height: 400px;
+  margin-top: 25px;
+  margin-left: 15%;  
+      
+}
+.slide {  
+  display: inline;
+  width: 885px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 15%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 10;  
+  background-size: cover;  
+  transition: all 0.65s ease-out;
+  border-radius: 25px;
+}
+.slide-1{
+  background-image: url("1.jpg");
+  ;
+}
+.slide-2{
+  background-image: url("2.jpg");
+  
+}
+.slide-3{
+  background-image: url("3.jpg");  
+}
+[id^="slide"]:checked + .Slider {
+  left: 1;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+.label {
+  text-align: center;  
+  margin-top: 20px;
+  background-color: red;
+  border-style: none;
+} 
+
+.head_row div {
+  float: right;  
+  margin-right: 5%;   
+  
+}
+.head_row div a  {  
+  padding-left: 10px;
+  padding-top: 15px;
+  color: white;
+}
+.head_row a {
+  color: white;
+  float: left;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+.label .ss {  
+  display: block;
+  padding-top: 10px;
+  max-width: 100%;  
+  padding-left: 25%;   
+}
+.ss p {
+  font-size: 200%;
+  font-weight: 700;
+  color: antiquewhite; 
+}
+.ss .text{
+  font-size: 120%;
+  padding-top: 20px;
+  color: antiquewhite;
+  margin-top: -25%; 
+}
+.ss figure {  
+  margin-top: 50px;
+  margin-right: 25px;
+}
+
+figure{
+  float: left;   
+}
+
+main {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto 1fr -95%;
+  min-height: 100vh;
+  font-size: 85%; 
+}
+.Dobr, .Mayak, .Kop { 
+  float: left;  
+  width: 300px;
+  height: 100px;
+  margin: 15px;
+  padding-top: 24px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 3px 15px 1500px 3px rgb(117, 101, 101);
+}
+:is(.Dobr,.Mayak,.Kop):hover {
+  float: left;  
+  width: 300px;
+  height: 100px;
+  margin: 15px;
+  padding-top: 24px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 3px 15px 1500px 3px rgb(117, 101, 101);
+  transform: scale(1.2);
+  transition: 1s;
+  
+}
+
+@keyframes hover {
+    from {
+      transform: scale(1.00);
+    }
+    10% {  
+        transform: scale(1.02);
+    };
+    20% {  
+      transform: scale(1.04);
+    };
+    30% {  
+      transform: scale(1.06);
+    };
+    40% {  
+      transform: scale(1.08);
+    };
+    50% {  
+      transform: scale(1.1);
+    };
+    60% {  
+      transform: scale(1.08);
+    };
+    70% {  
+      transform: scale(1.06);
+    };
+    80% {  
+      transform: scale(1.04);
+    };
+    90% {  
+      transform: scale(1.02);
+    };
+    to {
+      transform: scale(1.00);
+    }
+  
+}
+.Dobr {
+  background-color: darkslategrey;
+}
+
+.Kop {
+  background-color: red;  
+}
+.Mayak {
+  background-color: yellow;
+}
+
+footer {
+  text-align: center;
+  border: 1px solid black;
+  height: 6vh;
+  margin-left: 15%;
+  margin-right: 15%;  
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  background-color: #2f4f4f;
+  color: white;  
+  font-size: 14px;
+  font-weight: 700;
+}
+footer .self_link {
+  float: left;
+  padding-left: 25px;
+  padding-top: 15px;
+  color: white; 
+}
+footer .phone{
+  float: left; 
+  margin-left: 200px; 
+  margin-top: 10px;  
+}
+
+footer .phone_text, footer .email_text {
+  float: left;
+  margin-left: 5px;
+  font-weight: 700;
+  margin-top: 16px;  
+}
+
+footer .email{
+  float: left;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+video {
+  text-align: center;
+  width: 640px;
+  height: 360px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 0px solid black;
+  border-radius: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+
+
+
+
+
+
+

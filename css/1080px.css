@@ -1,0 +1,235 @@
+@media screen and (max-width:1020px) {
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 2em;
+    margin-top: -0.5em; 
+    height: 10vh;
+  }
+  .header .start {
+    margin: 0% 0 0% 5%;
+    align-self: center;
+  }
+  .header .open {
+    display: unset;    
+    align-self: center;
+    margin: 2% 7% 0% 0%;
+  }
+  .header .end {
+    display: none;
+  }
+  .slider {
+    width: 94%;    
+    margin-top: -12vw;    
+  } 
+  .slides {
+    height: unset;
+  }
+  .slides img {    
+    min-width: 100%; 
+    height: 120vw; 
+  }
+  .slides img:nth-child(1) {
+    content: url('../img/first.jpg');
+  }
+  .slides img:nth-child(2) {
+    content: url('../img/second.jpg');
+  }
+  .slides img:nth-child(3) {
+    content: url('../img/third.jpg');
+  }
+  .slides img:nth-child(4) {
+    content: url('../img/fourth.jpg');
+  }
+  .slides img:nth-child(5) {
+    content: url('../img/fifth.jpg');
+  }    
+  .modal {
+    display: unset;
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 9050;
+    transform: translateY(-100%); /* по умолчанию модальное окно прозрачно */    
+    pointer-events: none; /* элемент невидим для событий мыши */
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    width: 100vw;       
+  }
+  .modal:target {
+    visibility: visible;
+    transform: translateY(0%); /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */  
+    height: 100vh;
+    width: 104vw;
+  }
+  /* ширина модального окна и его отступы от экрана */
+  .modal-dialog {
+    position: relative;
+    width: 100% 
+  }
+
+  /* свойства для блока, содержащего контент модального окна */ 
+  .modal-content {
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    background-color: #2f4f4f;  
+    border-radius: .3em;
+    height: 100vh;
+    width: 101%;
+  }
+  .modal-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+  }
+  /* свойства для заголовка модального окна */
+  .modal-header {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.9375em;
+    width: 100%;
+  }
+  /* свойства для кнопки "Закрыть" */
+  .close {
+    margin-top: -0.5%;
+    color: #000;
+    margin-left: 35%;  
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  /* свойства для блока, содержащего основное содержимое окна */
+  .modal-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    overflow: hidden;
+    align-items: center; 
+    width: 100%; 
+  }
+  .modal-body a {
+    margin-top: 5vh;   
+  }  
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    margin-top: -10vh;
+    align-items: center;
+    width: 100%;
+  }  
+  .main-tile {
+    position: unset;
+    flex-direction: column; 
+    align-items: center;    
+    padding-top: 25%;
+  }
+ 
+  .main-tile .tile { 
+    align-self: center;      
+    margin-bottom: 25%;
+    height: 30vw;
+    width: 60vw;
+    margin-left: 5vw; 
+  }
+
+  .tile img {
+    width: 150vh;    
+  }
+  .tile:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  
+  .info {
+    margin-top: -25%;
+    width: 100%;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    background-color: unset; 
+    font-size: 1.2em;   
+  }
+  .info-item {
+    margin-left: 10%;
+    margin-right: 10%;    
+  }
+  .info-item img {
+    width: 24vw;
+  }
+  .info-item:nth-child(4),
+  .info-item:nth-child(5){
+    margin-top: 7vw;    
+  }
+  .slider-video {
+    margin: 5% 0 5% 0;
+    
+  }
+  .video video {
+    width: 84vw;
+    height: 46vw;
+    border-radius: 25px; 
+    margin-left: 1.5vw;
+    margin-right: 1.5vw; 
+  }
+  
+  .controls-video-slide{    
+    bottom: -2%; 
+  }
+  #slide-1-video:checked~.in-video .video {
+    transform: translate(39vw);
+    transition: all 1s;
+    margin-left: 6.5vw;
+     
+  }
+  #slide-2-video:checked~.in-video .video {  
+    transform: translate(-39vw);
+    transition: all 1s;
+    margin-right: 7vw
+  }
+  .info-footer {
+    padding: 0;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .group-1 {
+    order: 2;
+    width: 3.5vw; 
+    line-height: 1.6;     
+  }
+  .group-1 a {
+    font-size: 3.5vw;
+  }
+  .group-2 {
+    order: 1;    
+  }
+  .info-footer .group-2 img {
+    width: 19vh;
+    margin-left: -31vw;
+  }  
+}
+ 
+
