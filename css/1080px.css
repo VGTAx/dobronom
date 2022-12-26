@@ -63,7 +63,7 @@
     bottom: 0;
     left: 0;
     background: rgba(0,0,0,0.5); /* цвет фона */    
-    transform: translateY(-100%); /* по умолчанию модальное окно прозрачно */    
+    transform: translateY(-120%); /* по умолчанию модальное окно прозрачно */    
     pointer-events: none; /* элемент невидим для событий мыши */
     transition: 1s;
     margin: 0;
@@ -76,7 +76,7 @@
     visibility: visible;
     transform: translateY(0%); /* делаем окно видимым */
     pointer-events: auto; /* элемент видим для событий мыши */  
-    height: 100vh;
+    height: 120vh;
     width: 104vw;
     z-index: 150;
   }
