@@ -29,7 +29,7 @@
   }
   .slider {
     width: 94%;    
-    margin-top: -12vw;    
+    margin-top: -10vh;    
   } 
   .slides {
     height: unset;
@@ -170,7 +170,8 @@
   }
   .info-item {
     margin-left: 10%;
-    margin-right: 10%;    
+    margin-right: 10%;
+    font-size: 3.5vw;    
   }
   .info-item img {
     width: 24vw;
@@ -207,7 +208,7 @@
   }
   .info-footer {
     padding: 0;
-    height: 17vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     text-align: start;
