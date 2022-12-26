@@ -137,6 +137,7 @@ transition: all 0.7s;
   height: 65%;
   display: flex;
   flex-direction: column;
+  margin-top: 4vw;
 }
 
 .main-tile{   
@@ -153,18 +154,17 @@ transition: all 0.7s;
   box-shadow: 0px 1.0625em 5.625em -1.3125em rgb(0 0 0 / 80%);
   border-radius: 0.9375em;  
   justify-content: center; 
-  height: 10em;
-  width: 20em;
+  height: 13vw;
+  width: 23vw;
+  align-self: center;
   align-items: center;
-  margin-top: -5em;
+  margin-top: -6vw;
   margin-right: 3%;  
   
 }
 .tile img {
-  max-width: 10.9375em;
-  max-width: 75%;
-  text-align: center; 
-  margin-left: 10%;   
+  width: 13vw;  
+  text-align: center;    
 }
 .tile:hover {
   transform: scale(1.05);
@@ -193,7 +193,8 @@ transition: all 0.7s;
 .info-item   {
   display: flex;
   flex-direction: column;
-  font-size: 120%;
+  align-items: center;
+  font-size: 1.8vw;
   font-family: "Nunito Sans";
   color: #ffffff;
   margin: 10% 0% 5% 6%;
@@ -201,11 +202,9 @@ transition: all 0.7s;
 .info-item img {
   max-width: 100%;
   width: 100%;  
-  margin-left: 0%;
-  margin-bottom: 10%;
+  margin-left: 0%;  
 }
-.info-item-header{
-  
+.info-item-header{  
   align-self: center;
   line-height: 1.5625em;
   font-weight: 800;  
@@ -214,6 +213,8 @@ transition: all 0.7s;
   text-align: center;
   width: 95%;  
   align-self: center; 
+}
+
 }
 .info-item:nth-child(4) img,
 .info-item:nth-child(5) img {

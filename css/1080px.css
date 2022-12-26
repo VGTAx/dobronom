@@ -152,7 +152,7 @@
   }
 
   .tile img {
-    width: 150vh;    
+    width: 33vw;    
   }
   .tile:hover {
     transform: scale(1.1);
@@ -169,8 +169,8 @@
     font-size: 1.2em;   
   }
   .info-item {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 9%;
+    margin-right: 9%;
     font-size: 3.5vw;    
   }
   .info-item img {
