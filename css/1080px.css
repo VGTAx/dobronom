@@ -61,15 +61,13 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.5); /* цвет фона */
-    z-index: 150;
+    background: rgba(0,0,0,0.5); /* цвет фона */    
     transform: translateY(-100%); /* по умолчанию модальное окно прозрачно */    
     pointer-events: none; /* элемент невидим для событий мыши */
     transition: 1s;
     margin: 0;
     padding: 0;
-    width: 100vw;   
-    height: 10vh;
+    width: 100vw; 
     font-size: 5vw;    
   }
   .modal:target {
@@ -78,6 +76,7 @@
     pointer-events: auto; /* элемент видим для событий мыши */  
     height: 100vh;
     width: 104vw;
+    z-index: 150;
   }
   /* ширина модального окна и его отступы от экрана */
   .modal-dialog {
