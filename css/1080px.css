@@ -72,7 +72,7 @@
   }
   .modal:target {
     visibility: visible;
-    transform: translateY(0%); /* делаем окно видимым */
+    transform: translateY(-20%); /* делаем окно видимым */
     pointer-events: auto; /* элемент видим для событий мыши */  
     height: 100vh;
     width: 107vw;
