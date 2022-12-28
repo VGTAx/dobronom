@@ -201,13 +201,12 @@
     bottom: -2%; 
   }
   #slide-1-video:checked~.in-video .video {
-    transform: translate(39vw);
+    transform: translate(81vw);
     transition: all 1s;
-    margin-left: 6.5vw;
-     
+    margin-left: 6.5vw;     
   }
   #slide-2-video:checked~.in-video .video {  
-    transform: translate(-39vw);
+    transform: translate(3vw);
     transition: all 1s;
     margin-right: 7vw
   }
