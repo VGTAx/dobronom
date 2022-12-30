@@ -98,7 +98,7 @@ main {
 
 .slider-in {
   overflow: hidden;
-  border-radius: 1.5625em;
+  /*border-radius: 1.5625em;*/
 }
 
 .slides {
@@ -110,6 +110,7 @@ main {
 
 .slides img {  
   min-width: 100%;
+  border-radius: 1.5625em;
 }
 #slide-1:checked~.slider-in .slides {
   transform: translate(0);
@@ -145,10 +146,7 @@ transition: all 0.7s;
   flex-direction: row;   
   position: absolute;
   align-self: center; 
-  justify-content: center;
-  
-  width: 100%;
-  
+  justify-content: center;  
 }
 .main-tile .tile {
   display: flex;
@@ -157,8 +155,7 @@ transition: all 0.7s;
   border-radius: 0.9375em;  
   justify-content: center; 
   height: 12vw;
-  width: 21vw;
-  align-self: center;
+  width: 21vw;  
   align-items: center;
   margin-top: -5.5vw;  
   margin-left: 1.5vw;
@@ -166,8 +163,10 @@ transition: all 0.7s;
 }
 .tile img {
   width: 11.5vw;  
-  text-align: center; 
+  text-align: center;   
+  padding: 4.5vw;  
 }
+
 .tile:hover {
   transform: scale(1.05);
   transition: 0.5s;
