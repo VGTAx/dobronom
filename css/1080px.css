@@ -108,6 +108,9 @@
     text-decoration: none;
     color: white;    
   }
+  .modal-content a:hover {
+    text-decoration: underline ;
+  }
   /* свойства для заголовка модального окна */
   .modal-header {  
     display: flex;
@@ -128,6 +131,8 @@
   .close:active {
     text-decoration: none;
   }
+  
+ 
   .close img {
     width: 8vw;
   }

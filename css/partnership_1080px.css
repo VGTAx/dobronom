@@ -1,0 +1,194 @@
+@media screen and (max-width: 1000px){
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .head_nav {
+    height: 10vh;
+    font-size: 3.5vh;
+    width: 100%;
+    align-items: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .head_nav .main-page {
+    width: 100%;
+  }
+  .head_nav .open {
+    display: unset;    
+    margin-right: 15vw;
+  }
+  .head_nav ul {
+    display: none;
+  }
+
+  .modal {
+    display: unset;
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */    
+    transform: translateY(-100%); /* по умолчанию модальное окно cкрыто */    
+    pointer-events: none; /* элемент невидим для событий мыши */
+    transition: 0.7s;
+    margin: 0;
+    padding: 0;
+    width: 100vw; 
+    font-size: 5vw; 
+    visibility: hidden;
+    z-index: 1050;
+  }
+  .modal:target {
+    visibility: visible;
+    transform: translateY(0%); /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */  
+    height: 100vh;
+    width: 104vw;    
+  }
+  /* ширина модального окна и его отступы от экрана */
+  .modal-dialog {
+    position: relative;
+    width: 100% 
+  }
+
+  /* свойства для блока, содержащего контент модального окна */ 
+  .modal-content {
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    background-color: #2f4f4f;  
+    border-radius: .3em;
+    height: 100vh;
+    width: 107vw;
+  }
+  .modal-content a {
+    text-decoration: none;
+    color: white;    
+  }
+  .modal-content a:hover {
+    text-decoration: underline ;
+  }
+  /* свойства для заголовка модального окна */
+  .modal-header {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vw;
+    width: 100%;
+  }
+  /* свойства для кнопки "Закрыть" */
+  .close {
+    margin-top: -1.5vw;
+    color: #000;
+    margin-left: 20%;  
+    opacity: 1;
+    text-decoration: none;
+  }
+  .close:focus-visible, 
+  .close:active {
+    text-decoration: none;
+  } 
+  .close img {
+    width: 8vw;
+  }
+  /* свойства для блока, содержащего основное содержимое окна */
+  .modal-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    overflow: hidden;
+    align-items: center; 
+    width: 100%; 
+  }
+  .modal-body a {
+    margin-top: 5vh;   
+  } 
+  .info-footer {
+    padding: 0;
+    height: 21vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .group-1 {
+    order: 2;    
+    line-height: 1.6; 
+    width: 45vw;    
+  }
+  .group-1 a {    
+    font-size: 3.5vw;
+  }
+  .group-2 {
+    order: 1;    
+  }
+  .info-footer .group-2 img {
+    width: 19vh;
+    margin-left: -31vw;
+  } 
+  
+  
+  .modal_main_nav {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-8em) ;
+    transition: 1.3s; 
+    pointer-events: auto;    
+    width: 5vw;   
+    z-index: 9999;
+  }
+  
+  .controls {    
+    width: 5vw;
+    align-items: center; 
+    height: 75%;    
+  }
+  .controls svg {
+    width: 25vw;
+  }
+  
+  .main_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 9999;
+    width: 15vw;
+  }
+ 
+  .open-mod { 
+    position: absolute;   
+    display: flex;   
+    background-color: gray;        
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+    position: absolute;    
+    min-height: 15vh;
+    color: gray;
+    width: 1.875rem;    
+    border-radius: 0 20px 20px 0px;    
+    left: 8rem;
+  }
+ 
+  .content {
+    transition: 1.3s;
+    margin-left: 15vw;
+  }
+  
+  
+  
+  
+  
+  
+}
+  
