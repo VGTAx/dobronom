@@ -168,7 +168,7 @@
   .open-mod { 
     position: absolute;   
     display: flex;   
-    background-color: rgb(22, 13, 13);        
+    background-color: rgba(216, 216, 216, 0.411);        
     text-align: center;
     justify-content: center;
     align-items: center;    
