@@ -154,7 +154,7 @@
     height: 75%;    
   }
   .controls svg {
-    width: 25vw;
+    width: 25vw;    
   }
   
   .main_nav {
@@ -174,10 +174,11 @@
     align-items: center;    
     position: absolute;    
     min-height: 15vh;
-    color: gray;
+    color: rgb(12, 8, 8);
     width: 1.875rem;    
     border-radius: 0 20px 20px 0px;    
     left: 8rem;
+    
   }
  
   .content {
