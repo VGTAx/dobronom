@@ -144,8 +144,7 @@
     transform: translateX(-8em) ;
     transition: 1.3s; 
     pointer-events: auto;    
-    width: 5vw;   
-    z-index: 15;
+    width: 5vw; 
   }
   
   .controls {    
@@ -167,7 +166,7 @@
   .open-mod { 
     position: absolute;   
     display: flex;   
-    background-color: gray;        
+    background-color: rgb(24, 22, 22);        
     text-align: center;
     justify-content: center;
     align-items: center;    
@@ -176,7 +175,6 @@
     width: 1.875rem;    
     border-radius: 0 20px 20px 0px;    
     left: 8rem;
-    
   }
  
   .content {
