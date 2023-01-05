@@ -145,7 +145,7 @@
     transition: 1.3s; 
     pointer-events: auto;    
     width: 5vw;   
-    z-index: 9999;
+    z-index: 15;
   }
   
   .controls {    
@@ -161,20 +161,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 9999;
     width: 15vw;
   }
  
   .open-mod { 
     position: absolute;   
     display: flex;   
-    background-color: rgba(216, 216, 216, 0.411);        
+    background-color: gray;        
     text-align: center;
     justify-content: center;
     align-items: center;    
     position: absolute;    
-    min-height: 15vh;
-    color: rgb(12, 8, 8);
+    min-height: 15vh;    
     width: 1.875rem;    
     border-radius: 0 20px 20px 0px;    
     left: 8rem;
