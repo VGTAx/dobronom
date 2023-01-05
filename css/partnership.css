@@ -1,19 +1,24 @@
 body {
   margin: 0;
 }
-header {  
+
+header {
   width: 100%;
 }
+
+/* шапка сайта с навигацией */
 .head_nav {
   width: 75%;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  background-color: #2f4f4f; 
+  background-color: #2f4f4f;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   font-size: 1.5vw;
 }
+
+/*навигация сайта*/
 .head_nav_list {
   width: 72%;
   display: flex;
@@ -21,104 +26,97 @@ header {
   justify-content: flex-end;
   margin-right: 25px;
 }
+
 .head_nav ul li {
   padding-left: 16px;
 }
-header a, footer a, .modal_main_nav a {
+
+header a,
+footer a,
+.modal_main_nav a {
   text-decoration: none;
   color: white;
 }
+
+/*блок с ссылкой на главную страницу*/
 .main-page {
   align-self: center;
   margin-left: 35px;
 }
+
 .head_nav_list {
   list-style: none;
 }
-.open, .modal {
+
+/*скрытие кнопок откр/закр модального окна
+с навигацией для моб.версии*/
+.open,
+.modal {
   display: none;
 }
+
+/*навигация на другие страницы*/
 .modal_main_nav {
   position: fixed;
 }
-.controls {  
+
+/*стиль блока-кнопок навигации*/
+.controls {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  background-color: #2f4f4f; 
+  background-color: #2f4f4f;
   width: 8.9vw;
   min-width: 8em;
   height: 75vh;
-  display: flex;  
+  display: flex;
   flex-direction: column;
-  margin-top: 3vw; 
+  margin-top: 3vw;
 }
-.check {  
+
+/*расположение кнопки внутри блока навигации*/
+.check {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;   
+  align-items: center;
 }
+
 .check a {
   margin-top: 12px;
 }
+
 .check p {
   margin-top: 0;
 }
-.controls label {  
-  width: 100%; 
+
+.controls label {
+  width: 100%;
   height: 100%;
   cursor: pointer;
   font-size: 0.85em;
   color: white;
-  text-align: center;    
-  overflow:  hidden;  
+  text-align: center;
+  overflow: hidden;
 }
-.controls label .check:hover,
-.controls label .logo:hover,
-.controls label a:hover{
-  background-color: red;  
+
+/*стиль при наведении на кнопку*/
+:is(.controls label > div):hover {
+  background-color: red;
+  fill: yellow;
+  color: yellow;
   transition: all;
   transition-duration: .1s;
 }
-.controls label:nth-child(1){
+
+.controls label:nth-child(1) {
   border-top-right-radius: 25px;
 }
-.controls label:nth-last-child(1){
+
+.controls label:nth-last-child(1) {
   border-bottom-right-radius: 25px;
-}
-.controls .other-tenders .check a {
-  font-size: larger;
-}
-
-nav #carrier:checked~.controls label[for="carrier"],
-nav #carrier:checked~.controls label[for="carrier"] a,
-nav #carrier:checked~.controls label[for="carrier"] .logo,
-
-nav #provider:checked~.controls label[for="provider"],
-nav #provider:checked~.controls label[for="provider"] a,
-nav #provider:checked~.controls label[for="provider"] .logo,
-
-nav #subtenant:checked~.controls label[for="subtenant"],
-nav #subtenant:checked~.controls label[for="subtenant"] a,
-nav #subtenant:checked~.controls label[for="subtenant"] .logo,
-
-nav #online_adv:checked~.controls label[for="online_adv"],
-nav #online_adv:checked~.controls label[for="online_adv"] a,
-nav #online_adv:checked~.controls label[for="online_adv"] .logo,
-
-nav #landlord:checked~.controls label[for="landlord"],
-nav #landlord:checked~.controls label[for="landlord"] a,
-nav #landlord:checked~.controls label[for="landlord"] .logo,
-
-nav #other-tenders:checked~.controls label[for="other-tenders"],
-nav #other-tenders:checked~.controls label[for="other-tenders"] a,
-nav #other-tenders:checked~.controls label[for="other-tenders"] .logo {  
-  background-color: red;
-  color: yellow;
-  fill: yellow;
 }
 
 nav #carrier:hover~.controls label[for="carrier"] svg,
@@ -142,34 +140,80 @@ nav #other-tenders:hover~.controls label[for="other-tenders"] a {
   color: yellow
 }
 
+/*стиль актвиной кнопки навигации*/
+nav #carrier:checked~.controls label[for="carrier"],
+nav #carrier:checked~.controls label[for="carrier"] a,
+nav #carrier:checked~.controls label[for="carrier"] .logo,
+
+nav #provider:checked~.controls label[for="provider"],
+nav #provider:checked~.controls label[for="provider"] a,
+nav #provider:checked~.controls label[for="provider"] .logo,
+
+nav #subtenant:checked~.controls label[for="subtenant"],
+nav #subtenant:checked~.controls label[for="subtenant"] a,
+nav #subtenant:checked~.controls label[for="subtenant"] .logo,
+
+nav #online_adv:checked~.controls label[for="online_adv"],
+nav #online_adv:checked~.controls label[for="online_adv"] a,
+nav #online_adv:checked~.controls label[for="online_adv"] .logo,
+
+nav #landlord:checked~.controls label[for="landlord"],
+nav #landlord:checked~.controls label[for="landlord"] a,
+nav #landlord:checked~.controls label[for="landlord"] .logo,
+
+nav #other-tenders:checked~.controls label[for="other-tenders"],
+nav #other-tenders:checked~.controls label[for="other-tenders"] a,
+nav #other-tenders:checked~.controls label[for="other-tenders"] .logo {
+  background-color: red;
+  color: yellow;
+  fill: yellow;
+}
+
+
+/*прижали футер к низу*/
 main {
   min-height: calc(100vh - 15px);
   display: flex;
 }
+
+/*основное содержимое страниц*/
 article {
   margin-left: 11em;
-  position: relative; 
-  width: 70%; 
+  position: relative;
+  width: 70%;
 }
+
+/*секция основного содержимого*/
 section {
   margin-bottom: 5%;
   line-height: 1.3;
 }
-.h4, .email {
+
+.h4,
+.email {
   color: red;
   text-decoration: none;
 }
-.for-business,.food, .fresh, .sof, .non-food, .stm-food, .stm-non-food{
-  list-style: none; 
-  padding-left: 0; 
+
+.for-business,
+.food,
+.fresh,
+.sof,
+.non-food,
+.stm-food,
+.stm-non-food {
+  list-style: none;
+  padding-left: 0;
   margin-top: 0;
-  
 }
+
 .provider h5 {
   margin-bottom: 0;
   line-height: 1.7;
 }
-.btn-more-det{
+
+/*кнопка "детали"*/
+.btn-more-det {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,31 +223,35 @@ section {
   margin: 1% 0 10% 0;
   border-radius: 10px;
   color: white;
-  text-decoration: none;  
+  text-decoration: none;
 }
+
+/*кнопка для открытия формы*/
 .btn-fill {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   background: #E01A00;
   height: 50px;
   width: 180px;
   margin: 1% 0 10% 0;
   border-radius: 10px;
   color: white;
-  text-decoration: none;  
-}
-.providerfooter {
-  margin-top: 10%;  
-}
-.providerfooter p {
-  margin: 0;  
+  text-decoration: none;
 }
 
+.providerfooter {
+  margin-top: 10%;
+}
+
+.providerfooter p {
+  margin: 0;
+}
 
 footer {
-  width: 100%;  
+  width: 100%;
 }
+
 .info-footer {
   width: 75%;
   background-color: #2f4f4f;
@@ -215,14 +263,15 @@ footer {
   flex-direction: row;
   align-items: center;
 }
+
 .group-1 {
-  padding-left: 25px;  
+  padding-left: 25px;
 }
+
 .group-2 {
   margin-left: 42.5%;
 }
+
 .group-2 img {
   width: 8.25em;
 }
-
-
