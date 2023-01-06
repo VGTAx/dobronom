@@ -1,0 +1,309 @@
+@media screen and (max-width:1000px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 3.5vh;
+    margin-top: -0.5em;
+    height: 10vh;
+  }
+
+  /*блок с ссылкой на главную страницу*/
+  .header .start {
+    margin: 0% 0 0% 5%;
+    align-self: center;
+  }
+
+  /*кнопка открытия мод.окна с навигацией*/
+  .header .open {
+    display: unset;
+    align-self: center;
+    margin: 2% 7% 0% 0%;
+  }
+
+  /*кнопка закрытия мод.окна с навигацией*/
+  .header .end {
+    display: none;
+  }
+
+  /*Слайдер*/
+  .slider {
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 15vh;
+  }
+
+  /*блок с основным содержимым слайдера*/
+  .slider-in {
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .slides {
+    height: unset;
+  }
+
+  .slides img {
+    min-width: 100%;
+    height: 120vw;
+  }
+
+  /*замена картиной для слайдера с вертикальной
+  ориентацией*/
+  .slides img:nth-child(1) {
+    content: url('../img/first.jpg');
+  }
+
+  .slides img:nth-child(2) {
+    content: url('../img/second.jpg');
+  }
+
+  .slides img:nth-child(3) {
+    content: url('../img/third.jpg');
+  }
+
+  .slides img:nth-child(4) {
+    content: url('../img/fourth.jpg');
+  }
+
+  .slides img:nth-child(5) {
+    content: url('../img/fifth.jpg');
+  }
+
+  /*Блок модального окна*/
+  .modal {
+    display: unset;
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    transform: translateY(-100%);
+    /* по умолчанию модальное окно cкрыто */
+    pointer-events: none;
+    /* элемент невидим для событий мыши */
+    transition: 0.7s;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-size: 5vw;
+    visibility: hidden;
+    z-index: 1050;
+  }
+
+  .modal:target {
+    visibility: visible;
+    transform: translateY(0%);
+    /* делаем окно видимым */
+    pointer-events: auto;
+    /* элемент видим для событий мыши */
+    height: 100vh;
+    width: 104vw;
+  }
+
+  /* ширина модального окна и его отступы от экрана */
+  .modal-dialog {
+    position: relative;
+    width: 100%
+  }
+
+  /* свойства для блока, содержащего контент модального окна */
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #2f4f4f;
+    border-radius: .3em;
+    height: 100vh;
+    width: 107vw;
+  }
+
+  .modal-content a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .modal-content a:hover {
+    text-decoration: underline;
+  }
+
+  /* свойства для заголовка модального окна */
+  .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vw;
+    width: 100%;
+  }
+
+  /* свойства для кнопки "Закрыть" */
+  .close {
+    margin-top: -0.5vw;
+    color: #000;
+    margin-left: 25%;
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  .close img {
+    width: 8vw;
+  }
+
+  /* свойства для блока, содержащего основное содержимое окна */
+  .modal-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+  }
+
+  .modal-body a {
+    margin-top: 5vh;
+  }
+
+  /*Стили блока с основной информацией*/
+  .main {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    margin-top: -8vh;
+    align-items: center;
+    width: 100%;
+  }
+
+  /*Стиль блока инф. о магазинах*/
+  .main-tile {
+    position: unset;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25%;
+  }
+ /*стиль для каждого элемента "магазина" */
+  .main-tile .tile {
+    align-self: center;
+    margin-bottom: 25%;
+    height: 30vw;
+    width: 60vw;
+    margin-left: 5vw;
+  }
+
+
+  .tile img {
+    width: 33vw;
+    padding: 11.5vw;
+  }
+
+  .tile:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+/*основной блок с инф. о компании*/
+  .info {
+    margin-top: -25%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: unset;
+    font-size: 1.2em;
+  }
+/*блок содержащий инфу*/
+  .info-item {
+    margin-left: 9%;
+    margin-right: 9%;
+    font-size: 3.5vw;
+  }
+
+  .info-item img {
+    width: 24vw;
+  }
+
+  .info-item:nth-child(4),
+  .info-item:nth-child(5) {
+    margin-top: 7vw;
+  }
+
+  .slider-video {
+    margin: 5% 0 5% 0;
+  }
+  /*стилизация видео*/
+  .video video {
+    width: 84vw;
+    height: 46vw;
+    border-radius: 25px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+  }
+  /*расположение кнопок видео-слайдера*/
+  .controls-video-slide {
+    bottom: -2%;
+  }
+  /*переход по слайдам*/
+  #slide-1-video:checked~.in-video .video {
+    transform: translate(81vw);
+    transition: all 1s;
+    margin-left: 6.5vw;
+  }
+
+  #slide-2-video:checked~.in-video .video {
+    transform: translate(3vw);
+    transition: all 1s;
+    margin-right: 7vw
+  }
+  /*блок футера*/
+  .info-footer {
+    padding: 0;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  /*блок футера с ссылкой*/
+  .info-footer-img {
+    order: 2;
+    width: 3.5vw;
+    line-height: 1.6;
+  }
+
+  .info-footer-link a {
+    font-size: 3.5vw;
+  }
+/*блок футера с картинкой*/
+  .info-footer-img {
+    order: 1;
+  }
+
+  .info-footer-link img {
+    width: 19vh;
+    margin-left: -31vw;
+  }
+
+  #slide-1:checked~.controls label[for="slide-1"],
+  #slide-2:checked~.controls label[for="slide-2"],
+  #slide-3:checked~.controls label[for="slide-3"],
+  #slide-4:checked~.controls label[for="slide-4"],
+  #slide-5:checked~.controls label[for="slide-5"] {
+    animation: none;
+  }
+
+
+}

@@ -247,7 +247,7 @@ section {
 .providerfooter p {
   margin: 0;
 }
-
+/*Футер*/
 footer {
   width: 100%;
 }
@@ -263,15 +263,15 @@ footer {
   flex-direction: row;
   align-items: center;
 }
-
-.group-1 {
+/*Блок с ссылкой в футере*/
+.info-footer-link {
   padding-left: 25px;
 }
-
-.group-2 {
+/*Блок с картинкой в футере*/
+.info-footer-img {
   margin-left: 42.5%;
 }
 
-.group-2 img {
+.info-footer-img img {
   width: 8.25em;
 }

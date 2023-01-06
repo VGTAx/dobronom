@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/Dobronom_flex.css" rel="stylesheet" type="text/css">
-  <link href="css/1080px.css" rel="stylesheet" type="text/css" />
+  <link href="css/Dobronom.css" rel="stylesheet" type="text/css">
+  <link href="css/Dobronom_max_1000px.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
   <title>Document</title>
 </head>
 
@@ -23,12 +24,15 @@
         <a href="https://www.dobronom.by/partners/" target="_blank">Партнеры</a>
         <a href="https://www.dobronom.by/about/" target="_blank">О нас</a>
       </div>
+      <!--Кнопка открытия модал.окна с навигацией
+        для мобильной версии-->
       <div class="open">
         <a href="#openModal" id="open">
           <img src="img/burger.png" width="30px"></a>
       </div>
     </div>
   </header>
+  <!--Модальное коно с навигацией для мобильной версии-->
   <div id="openModal" class="modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -48,21 +52,8 @@
       </div>
     </div>
   </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-      console.log(scrollbar);
-      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
-        document.body.style.overflow = 'hidden';
-        document.querySelector('#openModal').style.marginLeft = scrollbar;
-      });
-      document.querySelector('[href="#close"]').addEventListener('click', function () {
-        document.body.style.overflow = 'visible';
-        document.querySelector('#openModal').style.marginLeft = '0px';
-      });
-    });
-  </script>
   <main>
+    <!--Слайдер с реклманой информацией-->
     <div class="slider">
       <input type="radio" id="slide-1" name="slide" checked>
       <input type="radio" id="slide-2" name="slide">
@@ -77,6 +68,7 @@
         <label for="slide-4"></label>
         <label for="slide-5"></label>
       </div>
+      <!--Блок со слайдами-->
       <div class="slider-in">
         <div class="slides">
           <img src="img/slider-1.jpg" loading="lazy" alt="slide-1" />
@@ -86,11 +78,10 @@
           <img src="img/slider-5.jpg" loading="lazy" alt="slide-5" />
         </div>
       </div>
-
     </div>
-
-
+    <!--Блок о компании-->
     <div class="main">
+      <!--Блок с инф. о типах магазинов-->
       <div class="main-tile">
         <div class="tile">
           <a href="https://www.dobronom.by/kopeechka/">
@@ -108,6 +99,7 @@
           </a>
         </div>
       </div>
+      <!--Блок с основной информацией о компании-->
       <div class="info">
         <div class="info-item">
           <img src="img/shop.png" alt="shop count">
@@ -137,8 +129,8 @@
         </div>
       </div>
     </div>
-
   </main>
+  <!--Слайдер с видео-->
   <div class="slider-video">
     <input type="radio" id="slide-1-video" name="slider-video" hidden checked />
     <input type="radio" id="slide-2-video" name="slider-video" hidden />
@@ -161,10 +153,11 @@
       </div>
     </div>
   </div>
+  <!--Футер с ссылкой на главную страницу-->
   <footer>
     <div class="info-footer">
-      <div class="group-1"><a href="https://vgtax.github.io/dobronom/">Офицальный сайт ЗАО “Доброном”</a></div>
-      <div class="group-2"><img src="img/brand.png" alt="brand"></div>
+      <div class="info-footer-link"><a href="https://vgtax.github.io/dobronom/">Офицальный сайт ЗАО “Доброном”</a></div>
+      <div class="info-footer-img"><img src="img/brand.png" alt="brand"></div>
     </div>
   </footer>
 </body>

@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/partnership.css" rel="stylesheet" type="text/css">
-  <link href="css/partnership_1080px.css" rel="stylesheet" type="text/css">
+  <link href="css/partnership_max_1000px.css" rel="stylesheet" type="text/css">
   <script src="script.js"></script>
   <title>Document</title>
 </head>
 
 <body>
   <header>
+    <!--Навигация-->
     <nav class="head_nav">
       <div class="main-page">
         <a href="index.html" class="main-page">ЗАО “Доброном”</a>
@@ -24,12 +25,15 @@
         <li><a href="https://www.dobronom.by/partners/" class="partners">Партнеры</a></li>
         <li><a href="https://www.dobronom.by/about/" class="about">О нас</a></li>
       </ul>
+      <!--Кнопка открытия мод.окна с навигацией для 
+      мобильной версии-->
       <div class="open">
         <a href="#openModal" id="open">
           <img src="img/burger.png" width="30px"></a>
       </div>
     </nav>
   </header>
+  <!--Модальное окно с навигацией для моб.версии-->
   <div id="openModal" class="modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -49,11 +53,12 @@
       </div>
     </div>
   </div>
-
   <main>
+    <!--Сайдбар с навигацией на другие страницы-->
     <div id="open-modal" class="modal_main_nav">
       <div class="modal_dialog_main_nav">
         <div class="main_nav">
+          <!--Навигация-->
           <nav>
             <input type="radio" name="partnership" id="carrier" hidden>
             <input type="radio" name="partnership" id="provider" hidden>
@@ -61,7 +66,7 @@
             <input type="radio" name="partnership" id="online_adv" hidden>
             <input type="radio" name="partnership" id="landlord" hidden checked>
             <input type="radio" name="partnership" id="other-tenders" hidden>
-
+            <!--Кнопки(ссылки) навигации-->
             <div class="controls">
               <label for="carrier">
                 <div class="check">
@@ -131,6 +136,7 @@
               </label>
             </div>
           </nav>
+          <!--Кнопка откр/закр сайдбара в моб.версии-->
           <div class="open-mod">
             <a href="##" class="openbtn">
               <img src="img/tabler_chevron-left-test.png" alt="landlord">
@@ -139,6 +145,7 @@
         </div>
       </div>
     </div>
+    <!--Содержимое страницы-->
     <article class="content">
       <section class="provider">
         <h2>Арендодателям</h2>
@@ -158,8 +165,8 @@
   </main>
   <footer>
     <div class="info-footer">
-      <div class="group-1"><a href="https://vgtax.github.io/dobronom/">Офицальный сайт ЗАО “Доброном”</a></div>
-      <div class="group-2"><img src="img/brand.png" alt="brand"></div>
+      <div class="info-footer-link"><a href="https://vgtax.github.io/dobronom/">Офицальный сайт ЗАО “Доброном”</a></div>
+      <div class="info-footer-img"><img src="img/brand.png" alt="brand"></div>
     </div>
   </footer>
 </body>
