@@ -115,29 +115,29 @@
 
   .slides-img {
     width: 100%;
-    height: 100%;
+    height: 95vw;
   }
 
   /*замена картинок для слайдера с вертикальной
   ориентацией*/
   .slides-img img:nth-child(1) {
-    content: url('/img/first.jpg');
+    content: url('../img/first.jpg');
   }
 
   .slides-img img:nth-child(2) {
-    content: url('/img/second.jpg');
+    content: url('../img/second.jpg');
   }
 
   .slides-img img:nth-child(3) {
-    content: url('/img/third.jpg');
+    content: url('../img/third.jpg');
   }
 
   .slides-img img:nth-child(4) {
-    content: url('/img/fourth.jpg');
+    content: url('../img/fourth.jpg');
   }
 
   .slides-img img:nth-child(5) {
-    content: url('/img/fifth.jpg');
+    content: url('../img/fifth.jpg');
   }
 
   main {
