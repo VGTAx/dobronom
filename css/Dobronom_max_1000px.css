@@ -105,7 +105,7 @@
 
   .slider-img {
     width: 98%;
-
+    height: 85vh;
   }
 
   .slides-img-container {
@@ -141,6 +141,7 @@
 
   main {
     margin: 0;
+    height: 300vw;
   }
 
   /*Грид контейнер с типами магазинов*/
