@@ -110,12 +110,12 @@
 
   .slides-img-container {
     width: 100%;
-    height: 120vw;
+    min-height: 100%;
   }
 
   .slides-img {
     width: 100%;
-    height: 120vw;
+    min-height: 100%;
   }
 
   /*замена картинок для слайдера с вертикальной
