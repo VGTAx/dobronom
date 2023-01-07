@@ -122,15 +122,15 @@
   /*замена картинок для слайдера с вертикальной
   ориентацией*/
   .slides-img img:nth-child(1) {
-    content: url('/img/first.jpg');
+    content: url('img/first.jpg');
   }
 
   .slides-img img:nth-child(2) {
-    content: url('/img/second.jpg');
+    content: url('img/second.jpg');
   }
 
   .slides-img img:nth-child(3) {
-    content: url('/img/third.jpg');
+    content: url('img/third.jpg');
   }
 
   .slides-img img:nth-child(4) {
