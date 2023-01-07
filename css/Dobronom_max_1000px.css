@@ -6,7 +6,7 @@
 
   body {
     display: grid;    
-    grid: auto 2fr 2.2fr 0 auto / 100%;
+    grid: auto 1fr 2.2fr 0 auto / 100%;
     min-height: 100vh;
     row-gap: 2.4vw;    
   }
@@ -108,13 +108,12 @@
   }
 
   .slides-img-container {
-    width: 100%;
-    min-height: 100%;
+    width: 100%;    
   }
 
   .slides-img {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
   }
 
   /*замена картинок для слайдера с вертикальной
