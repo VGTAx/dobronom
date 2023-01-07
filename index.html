@@ -1,165 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/Dobronom.css" rel="stylesheet" type="text/css">
-  <link href="css/Dobronom_max_1000px.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
-  <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="/css/Dobronom.css" rel="stylesheet" type="text/css" />
+   <link href="/css/Dobronom_max_1000px.css" rel="stylesheet" type="text/css"/>
+   <script src="script.js"></script>
+   <title>Dobronom</title>
 </head>
 
 <body>
-  <header>
-    <div class="header">
-      <div class="start">
-        <a href="/dobronom">ЗАО "Доброном"</a>
-      </div>
-      <div class="end">
-        <a href="https://www.dobronom.by/news/" target="_blank">Новости</a>
-        <a href="partnership.html" target="_blank">Сотрудничество</a>
-        <a href="https://www.dobronom.by/career/" target="_blank">Карьера</a>
-        <a href="https://www.dobronom.by/partners/" target="_blank">Партнеры</a>
-        <a href="https://www.dobronom.by/about/" target="_blank">О нас</a>
-      </div>
-      <!--Кнопка открытия модал.окна с навигацией
-        для мобильной версии-->
-      <div class="open">
-        <a href="#openModal" id="open">
-          <img src="img/burger.png" width="30px"></a>
-      </div>
-    </div>
-  </header>
-  <!--Модальное коно с навигацией для мобильной версии-->
-  <div id="openModal" class="modal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <a href="/Dobronom_flex.html">ЗАО "Доброном"</a>
-          <a href="#close" title="close" class="close">
-            <img src="img/close.png" />
-          </a>
-        </div>
-        <div class="modal-body">
-          <a href="https://www.dobronom.by/news/" target="_blank">Новости</a>
-          <a href="partnership.html" target="_blank">Сотрудничество</a>
-          <a href="https://www.dobronom.by/career/" target="_blank">Карьера</a>
-          <a href="https://www.dobronom.by/partners/" target="_blank">Партнеры</a>
-          <a href="https://www.dobronom.by/about/" target="_blank">О нас</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <main>
-    <!--Слайдер с реклманой информацией-->
-    <div class="slider">
-      <input type="radio" id="slide-1" name="slide" checked>
-      <input type="radio" id="slide-2" name="slide">
-      <input type="radio" id="slide-3" name="slide">
-      <input type="radio" id="slide-4" name="slide">
-      <input type="radio" id="slide-5" name="slide">
+   <header>
+      <!--Навигация-->
+      <nav class="head_nav">
+         <a href="index.html">ЗАО "Доброном"</a>
+         <a href="https://www.dobronom.by/news/" target="_blank">Новости</a>
+         <a href="partnership.html" target="_blank">Сотрудничество</a>
+         <a href="https://www.dobronom.by/career/" target="_blank">Карьера</a>
+         <a href="https://www.dobronom.by/partners/" target="_blank">Партнеры</a>
+         <a href="https://www.dobronom.by/about/" target="_blank">О нас</a>
+         <!--Кнопка открытия меню навигации в мобил.версии-->
+         <div class="openBtn">
+            <a href="#modal-nav" id="openBtn">
+              <img src="img/burger.png" width="30px">
+            </a>
+         </div> 
+      </nav>
+      <!--Модально окно с навигацией в мобил.версии-->
+      <div id="modal-nav" class="modal-nav">
+         <div class="modal-nav-dialog">
+           <div class="modal-nav-content">
+             <div class="modal-nav-header"> 
+               <a href="index.html">ЗАО "Доброном"</a>              
+               <a href="#close" title="close" class="closeBtn">
+                 <img src="img/close.png"/>
+               </a>
+             </div>
+             <nav class="modal-nav-body">
+               <a href="https://www.dobronom.by/news/" target="_blank">Новости</a>
+               <a href="https://www.dobronom.by/partnership/perevozchikam/" target="_blank">Сотрудничество</a>
+               <a href="https://www.dobronom.by/career/" target="_blank">Карьера</a>
+               <a href="https://www.dobronom.by/partners/" target="_blank">Партнеры</a>
+               <a href="https://www.dobronom.by/about/" target="_blank">О нас</a>
+             </nav>
+           </div>
+         </div>
+       </div>
 
-      <div class="controls">
-        <label for="slide-1"></label>
-        <label for="slide-2"></label>
-        <label for="slide-3"></label>
-        <label for="slide-4"></label>
-        <label for="slide-5"></label>
+   </header>
+   <!--Слайдер с рекламными изображениями-->
+   <div class="slider-img">
+      <input type="radio" name="flyer" id="flyer-slide-1" hidden checked>
+      <input type="radio" name="flyer" id="flyer-slide-2" hidden>
+      <input type="radio" name="flyer" id="flyer-slide-3" hidden>
+      <input type="radio" name="flyer" id="flyer-slide-4" hidden>
+      <input type="radio" name="flyer" id="flyer-slide-5" hidden>
+      <!--Контейнер со слайдами-->
+      <div class="slides-img-container">
+         <div class="slides-img">
+            <img src="/img/slider-1.jpg" alt="slide-1">
+            <img src="/img/slider-2.jpg" alt="slide-2">
+            <img src="/img/slider-3.jpg" alt="slide-3">
+            <img src="/img/slider-4.jpg" alt="slide-4">
+            <img src="/img/slider-5.jpg" alt="slide-5">
+         </div>
       </div>
-      <!--Блок со слайдами-->
-      <div class="slider-in">
-        <div class="slides">
-          <img src="img/slider-1.jpg" loading="lazy" alt="slide-1" />
-          <img src="img/slider-2.jpg" loading="lazy" alt="slide-2" />
-          <img src="img/slider-3.jpg" loading="lazy" alt="slide-3" />
-          <img src="img/slider-4.jpg" loading="lazy" alt="slide-4" />
-          <img src="img/slider-5.jpg" loading="lazy" alt="slide-5" />
-        </div>
+      <!--Контейнер с кнопками переключения слайдов-->
+      <div class="slider-img-controls">
+         <label for="flyer-slide-1"></label>
+         <label for="flyer-slide-2"></label>
+         <label for="flyer-slide-3"></label>
+         <label for="flyer-slide-4"></label>
+         <label for="flyer-slide-5"></label>
       </div>
-    </div>
-    <!--Блок о компании-->
-    <div class="main">
-      <!--Блок с инф. о типах магазинов-->
-      <div class="main-tile">
-        <div class="tile">
-          <a href="https://www.dobronom.by/kopeechka/">
-            <img src="img/Kop.png" alt="Kopeechka" />
-          </a>
-        </div>
-        <div class="tile">
-          <a href="https://www.dobronom.by/dobronom/">
-            <img src="img/Dobr.png" alt="Dobronom" />
-          </a>
-        </div>
-        <div class="tile">
-          <a href="https://www.dobronom.by/mayak/">
-            <img src="img/Mayak.png" alt="Mayak">
-          </a>
-        </div>
+   </div>
+   <main>
+      <!--Грид контейнер с типами магазинов-->
+      <div class="store-grid-container">
+         <div class="store kop">
+            <a href="https://www.dobronom.by/kopeechka/" target="_blank">
+               <img src="img/Kop.png" alt="logo-kopeechka">
+            </a>
+         </div>
+         <div class="store dobr">
+            <a href="https://www.dobronom.by/dobronom/" target="_blank">
+               <img src="img/Dobr.png" alt="logo-dobronom">
+            </a>
+         </div>
+         <div class="store mayak">
+            <a href="https://www.dobronom.by/mayak/" target="_blank">
+               <img src="img/Mayak.png" alt="logo-mayak">
+            </a>
+         </div>
       </div>
-      <!--Блок с основной информацией о компании-->
-      <div class="info">
-        <div class="info-item">
-          <img src="img/shop.png" alt="shop count">
-          <div class="info-item-header">847</div>
-          <div class="info-item-footer">магазинов</div>
-        </div>
-        <div class="info-item">
-          <img src="img/empl.png" alt="employee">
-          <div class="info-item-header">12K</div>
-          <div class="info-item-footer">сотрудников</div>
-        </div>
-        <div class="info-item">
-          <img src="img/city.png" alt="city count">
-          <div class="info-item-header">180</div>
-          <div class="info-item-footer">населенных</div>
-          <div class="info-item-footer">пунктов</div>
-        </div>
-        <div class="info-item">
-          <img src="img/provider.png" alt="provider count">
-          <div class="info-item-header">700</div>
-          <div class="info-item-footer">поставщиков</div>
-        </div>
-        <div class="info-item">
-          <img src="img/sub.png" alt="subs">
-          <div class="info-item-header">300К</div>
-          <div class="info-item-footer">подписчиков</div>
-        </div>
+      <!--Грид контейнер с информацией о компании-->
+      <div class="company-grid-container">
+         <div class="company shop">
+            <img src="/img/shop.png" alt="shop">
+            <p class="number">855</p>
+            <p>магазинов</p>
+         </div>
+         <div class="company empl">
+            <img src="/img/empl.png" alt="empl">
+            <p class="number">12К</p>
+            <p>сотрудников</p>
+         </div>
+         <div class="company city">
+            <img src="/img/city.png" alt="city">
+            <p class="number">180</p>
+            <p>населенных пунктов</p>
+         </div>         
+         <div class="company prov">
+            <img src="img/provider.png" alt="provider">
+            <p class="number">700</p>
+            <p>поставщиков</p>
+         </div>
+         <div class="company sub">
+            <img src="/img/sub.png" alt="sub">
+            <p class="number">300К</p>
+            <p>подписчиков</p>
+         </div>
       </div>
-    </div>
-  </main>
-  <!--Слайдер с видео-->
-  <div class="slider-video">
-    <input type="radio" id="slide-1-video" name="slider-video" hidden checked />
-    <input type="radio" id="slide-2-video" name="slider-video" hidden />
-    <div class="controls-video-slide">
-      <label for="slide-1-video"></label>
-      <label for="slide-2-video"></label>
-    </div>
-    <div class="in-video">
-      <div class="video">
-        <video src="video/video.mp4" loop="infinite" muted autoplay width="840px" height="460px">
-        </video>
-        <video src="video/video.mp4" loop="infinite" muted autoplay width="840px" height="460px">
-        </video>
-        <video src="video/video.mp4" loop="infinite" muted autoplay width="840px" height="460px">
-        </video>
-        <video src="video/video.mp4" loop="infinite" muted autoplay width="840px" height="460px">
-        </video>
-        <video src="video/video.mp4" loop="infinite" muted autoplay width="840px" height="460px">
-        </video>
+   </main>
+   <!--Слайдер с видео рекламой-->
+   <div class="slider-video">
+      <input type="radio" name="video" id="video-slide-1" hidden checked>
+      <input type="radio" name="video" id="video-slide-2" hidden>
+      <div class="slides-video-container">
+         <div class="slides-video">
+            <video src="video/video.mp4" muted autoplay loop="autoplay"></video>
+            <video src="video/video.mp4" muted autoplay loop="autoplay"></video>
+            <video src="video/video.mp4" muted autoplay loop="autoplay"></video>
+            <video src="video/video.mp4" muted autoplay loop="autoplay"></video>
+            <video src="video/video.mp4" muted autoplay loop="autoplay"></video>
+         </div>
       </div>
-    </div>
-  </div>
-  <!--Футер с ссылкой на главную страницу-->
-  <footer>
-    <div class="info-footer">
-      <div class="info-footer-link"><a href="https://vgtax.github.io/dobronom/">Офицальный сайт ЗАО “Доброном”</a></div>
-      <div class="info-footer-img"><img src="img/brand.png" alt="brand"></div>
-    </div>
-  </footer>
+      <div class="slider-video-controls">
+         <label for="video-slide-1"></label>
+         <label for="video-slide-2"></label>
+      </div>
+   </div>
+   <footer>
+      <div class="footer">
+         <a href="index.html">Официальный сайт ЗАО "Доброном"</a>
+         <img src="/img/brand.png">
+      </div>
+   </footer>
 </body>
 
 </html>
