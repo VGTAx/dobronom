@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
     document.body.style.overflow = 'hidden';
     document.querySelector('#modal-nav').style.marginLeft = scrollbar;
   });
-  document.querySelector('[href="#close"]').addEventListener('click',function(){
+  document.querySelector('[href="#closeBtn"]').addEventListener('click',function(){
     document.body.style.overflow = 'visible';
     document.querySelector('#modal-nav').style.marginLeft = '0px';
   });
