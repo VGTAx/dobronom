@@ -1,6 +1,10 @@
 html {
   font-family: "Cambria";
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 
 header {
   display: flex;
@@ -165,7 +169,6 @@ main {
   position: absolute;
   align-self: center;
   justify-content: center;
-
 }
 /*стиль для каждого элемента "магазина" */
 .main-tile .tile {
@@ -211,8 +214,8 @@ main {
   justify-content: center;
   background-color: red;
   padding-top: 3.4375em;
-  margin-left: -0.49em;
-  margin-right: -0.5em;
+  
+  
 }
 /*блок содержащий инфу*/
 .info-item {
@@ -228,7 +231,6 @@ main {
 .info-item img {
   max-width: 100%;
   width: 7vw;
-
 }
 
 .info-item-header {
@@ -245,8 +247,7 @@ main {
   position: relative;
   display: block;
   margin-top: -1.2vw;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
+  
   justify-content: center;
 }
 /*блок содержащий видео в слайдере*/
