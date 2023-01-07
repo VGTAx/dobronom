@@ -6,10 +6,9 @@
 
   body {
     display: grid;    
-    grid: auto 1fr 2.2fr 0 auto / 100%;
+    grid: auto 2fr 2.2fr 0 auto / 100%;
     min-height: 100vh;
-    row-gap: 2.4vw;
-    
+    row-gap: 2.4vw;    
   }
 
   /*Отключили навигацию десктопной версии и видео-слайдер*/
@@ -105,7 +104,7 @@
 
   .slider-img {
     width: 98%;
-    height: 120vw;
+    height: 160vw;
   }
 
   .slides-img-container {
